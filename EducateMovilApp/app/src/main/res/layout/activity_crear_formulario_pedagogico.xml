@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#FFF7DA"
+    android:padding="5dp"
+    tools:context=".ui.CrearFormularioPedagogico">
+
+
+    <ScrollView
+        android:id="@+id/scrollFormularioPedagogico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/visita_hora"
+                    android:layout_width="380dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/visita_numero"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/visita_hora"
+                    android:layout_toRightOf="@id/escuela_MIE"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/escuela_MIE"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/visita_hora"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/escuela_MIE"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/nombre"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text=" "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/label_escuela_jornada"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/direccion"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="JORNADA: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/escuela_jornada"
+                    android:layout_width="180dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/direccion"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/label_escuela_jornada"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/labelParroquia"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/label_escuela_jornada"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="PARROQUIA: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/parroquia"
+                    android:layout_width="280dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/escuela_jornada"
+                    android:layout_toRightOf="@id/labelParroquia"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/labelMotivo"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelParroquia"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="MOTIVO:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/motivo"
+                    android:layout_width="310dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/parroquia"
+                    android:layout_toRightOf="@id/labelMotivo"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/labelEmbajadorIN"
+                    android:layout_width="115dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelMotivo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="EMBAJADOR IN:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/embajadorIN"
+                    android:layout_width="265dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/motivo"
+                    android:layout_toRightOf="@id/labelEmbajadorIN"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="ROGER GRANDA"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:background="#ffffff"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="FORMULARIO PEDAGÓGICO"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp">
+
+                        <CheckBox
+                            android:id="@+id/chboc_extracurricular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Extracurriculares" />
+
+                        <CheckBox
+                            android:id="@+id/chbox_internet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Internet" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="ACCION TOMADA:*"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/accionTomadaPedagogica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
+                            android:gravity="top"
+                            android:minLines="3"
+                            android:maxLines="8"
+                            android:enabled="true"
+                            android:isScrollContainer="true"
+                            android:hint="Ingrese aqui la informacion...."
+                            android:background="#ffffff"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/labelNoProfesoresCapacitados"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="# de profesores capacitados APCI:*   "
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/noProfesoresCapacitados"
+                            android:layout_width="@dimen/activity_horizontal_ingresoNum"
+                            android:layout_height="@dimen/activity_vertical_ingresoNum"
+                            android:layout_toRightOf="@id/labelNoProfesoresCapacitados"
+                            android:background="@drawable/borde_celda"
+                            android:enabled="true"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:isScrollContainer="true"
+                            android:maxLines="1"
+                            android:minLines="1" />
+
+                        <TextView
+                            android:id="@+id/labelMinutosAPCI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/labelNoProfesoresCapacitados"
+                            android:layout_marginBottom="3dp"
+                            android:text="Minutos de uso APCI:*   "
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/noMinutosAPCI"
+                            android:layout_width="@dimen/activity_horizontal_ingresoNum"
+                            android:layout_height="@dimen/activity_vertical_ingresoNum"
+                            android:layout_below="@id/labelNoProfesoresCapacitados"
+                            android:layout_toRightOf="@id/labelMinutosAPCI"
+                            android:background="@drawable/borde_celda"
+                            android:enabled="true"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:isScrollContainer="true"
+                            android:maxLines="1"
+                            android:minLines="1" />
+
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/labelAlumnosIngresados"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="# ALUMNOS INGRESADOS"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/labelAlumnosTrabajando"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/labelAlumnosIngresados"
+                    android:layout_marginTop="5dp"
+                    android:text="# ALUMNOS TRABAJANDO"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/aivaciolabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/labelAlumnosIngresados"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="end"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/aiAlabel"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelAlumnosIngresados"
+                    android:layout_toRightOf="@id/aivaciolabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="A"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/aiBlabel"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelAlumnosIngresados"
+                    android:layout_toRightOf="@id/aiAlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="B"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/aiClabel"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelAlumnosIngresados"
+                    android:layout_toRightOf="@id/aiBlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="C"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/atLENGlabel"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelAlumnosTrabajando"
+                    android:layout_toRightOf="@id/aiClabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="LENG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/atMATHlabel"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelAlumnosTrabajando"
+                    android:layout_toRightOf="@id/atLENGlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="MAT"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/ai2doEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/aivaciolabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2DOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai2DOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/aiAlabel"
+                    android:layout_toRightOf="@id/ai2doEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai2DOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/aiBlabel"
+                    android:layout_toRightOf="@id/ai2DOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai2DOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/aiClabel"
+                    android:layout_toRightOf="@id/ai2DOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:id="@+id/ai3ROEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai2doEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3ROEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai3ROEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai2DOEGB_A"
+                    android:layout_toRightOf="@id/ai3ROEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai3ROEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai2DOEGB_B"
+                    android:layout_toRightOf="@id/ai3ROEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai3ROEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai2DOEGB_C"
+                    android:layout_toRightOf="@id/ai3ROEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <TextView
+                    android:id="@+id/ai4TOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai3ROEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="4TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai4TOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai3ROEGB_A"
+                    android:layout_toRightOf="@id/ai4TOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai4TOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai3ROEGB_B"
+                    android:layout_toRightOf="@id/ai4TOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai4TOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai3ROEGB_C"
+                    android:layout_toRightOf="@id/ai4TOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <TextView
+                    android:id="@+id/ai5TOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai4TOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="5TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai5TOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai4TOEGB_A"
+                    android:layout_toRightOf="@id/ai5TOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai5TOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai4TOEGB_B"
+                    android:layout_toRightOf="@id/ai5TOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai5TOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai4TOEGB_C"
+                    android:layout_toRightOf="@id/ai5TOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <TextView
+                    android:id="@+id/ai6TOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai5TOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="6TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai6TOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai5TOEGB_A"
+                    android:layout_toRightOf="@id/ai6TOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai6TOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai5TOEGB_B"
+                    android:layout_toRightOf="@id/ai6TOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai6TOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai5TOEGB_C"
+                    android:layout_toRightOf="@id/ai6TOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:id="@+id/ai7MOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai6TOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="7MOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai7MOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai6TOEGB_A"
+                    android:layout_toRightOf="@id/ai7MOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai7MOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai6TOEGB_B"
+                    android:layout_toRightOf="@id/ai7MOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai7MOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai6TOEGB_C"
+                    android:layout_toRightOf="@id/ai7MOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:id="@+id/ai8VOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai7MOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="8VOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai8VOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai7MOEGB_A"
+                    android:layout_toRightOf="@id/ai8VOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai8VOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai7MOEGB_B"
+                    android:layout_toRightOf="@id/ai8VOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai8VOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai7MOEGB_C"
+                    android:layout_toRightOf="@id/ai8VOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <TextView
+                    android:id="@+id/ai9NOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai8VOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="9NOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai9NOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai8VOEGB_A"
+                    android:layout_toRightOf="@id/ai9NOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai9NOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai8VOEGB_B"
+                    android:layout_toRightOf="@id/ai9NOEGB_A"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/ai9NOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai8VOEGB_C"
+                    android:layout_toRightOf="@id/ai9NOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+                <TextView
+                    android:id="@+id/ai10MOEGBlabel"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ai9NOEGBlabel"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="10MOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ai10MOEGB_A"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai9NOEGB_A"
+                    android:layout_toRightOf="@id/ai10MOEGBlabel"
+                    android:background="@drawable/borde_celda"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="3"
+                    />
+
+
+                <EditText
+                    android:id="@+id/ai10MOEGB_B"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai9NOEGB_B"
+                    android:layout_toRightOf="@id/ai10MOEGB_A"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:background="@drawable/borde_celda"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+                <EditText
+                    android:id="@+id/ai10MOEGB_C"
+                    android:layout_width="40dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ai9NOEGB_C"
+                    android:layout_toRightOf="@id/ai10MOEGB_B"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_2DOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/atLENGlabel"
+                    android:layout_toRightOf="@id/ai2DOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_2DOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/atMATHlabel"
+                    android:layout_toRightOf="@id/AT_2DOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_3ROEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_2DOEGB_LEN"
+                    android:layout_toRightOf="@id/ai2DOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_3ROEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_2DOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_3ROEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_4TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_3ROEGB_LEN"
+                    android:layout_toRightOf="@id/ai3ROEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_4TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_3ROEGB_MAT"
+                    android:layout_toRightOf="@id/AT_4TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_5TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_4TOEGB_LEN"
+                    android:layout_toRightOf="@id/ai4TOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_5TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_4TOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_5TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <EditText
+                    android:id="@+id/AT_6TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_5TOEGB_LEN"
+                    android:layout_toRightOf="@id/ai5TOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_6TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_5TOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_6TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_7MOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_6TOEGB_LEN"
+                    android:layout_toRightOf="@id/ai6TOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_7MOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_6TOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_7MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_8VOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_7MOEGB_LEN"
+                    android:layout_toRightOf="@id/ai7MOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_8VOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_7MOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_8VOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_9NOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_8VOEGB_LEN"
+                    android:layout_toRightOf="@id/ai8VOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_9NOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_8VOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_9NOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_10MOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_9NOEGB_LEN"
+                    android:layout_toRightOf="@id/ai9NOEGB_C"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/AT_10MOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/AT_9NOEGB_MAT"
+                    android:layout_toRightOf="@id/AT_10MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/labellecciones"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/labelvacio2"
+                    android:text="# LECCIONES APROBADAS"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/labelPromedio"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/labellecciones"
+                    android:layout_marginTop="5dp"
+                    android:text="PROMEDIO ACADEMICO"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/labelvacio2"
+                    android:layout_width="80dp"
+                    android:layout_height="74dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/LA_LENGlabel"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labellecciones"
+                    android:layout_toRightOf="@id/labelvacio2"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="LENG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/LA_MATHlabel"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labellecciones"
+                    android:layout_toRightOf="@id/LA_LENGlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="MAT"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/PA_LENGlabel"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelPromedio"
+                    android:layout_toRightOf="@id/LA_MATHlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="LENG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/PA_MATHlabel"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelPromedio"
+                    android:layout_toRightOf="@id/PA_LENGlabel"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="MAT"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/label2DOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/labelvacio2"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2DOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_2DOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_LENGlabel"
+                    android:layout_toRightOf="@id/label2DOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_2DOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_MATHlabel"
+                    android:layout_toRightOf="@id/LA_2DOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_2DOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_LENGlabel"
+                    android:layout_toRightOf="@id/LA_2DOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_2DOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_MATHlabel"
+                    android:layout_toRightOf="@id/PA_2DOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+
+                <TextView
+                    android:id="@+id/label3ROEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label2DOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3ROEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_3ROEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_2DOEGB_LEN"
+                    android:layout_toRightOf="@id/label3ROEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_3ROEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_2DOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_3ROEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_3ROEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_2DOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_3ROEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_3ROEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_2DOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_3ROEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/label4TOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label3ROEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="4TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/LA_4TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_3ROEGB_LEN"
+                    android:layout_toRightOf="@id/label4TOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_4TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_3ROEGB_MAT"
+                    android:layout_toRightOf="@id/LA_4TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_4TOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_3ROEGB_LEN"
+                    android:layout_toRightOf="@id/LA_4TOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_4TOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_3ROEGB_MAT"
+                    android:layout_toRightOf="@id/PA_4TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+                <TextView
+                    android:id="@+id/label5TOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label4TOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="5TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_5TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_4TOEGB_LEN"
+                    android:layout_toRightOf="@id/label5TOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_5TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_4TOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_5TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_5TOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_4TOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_5TOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_5TOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_4TOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_5TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <TextView
+                    android:id="@+id/label6TOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label5TOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="6TOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_6TOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_5TOEGB_LEN"
+                    android:layout_toRightOf="@id/label6TOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_6TOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_5TOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_6TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_6TOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_5TOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_6TOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_6TOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_5TOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_6TOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <TextView
+                    android:id="@+id/label7MOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label6TOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="7MOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_7MOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_6TOEGB_LEN"
+                    android:layout_toRightOf="@id/label7MOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_7MOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_6TOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_7MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_7MOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_6TOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_7MOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_7MOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_6TOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_7MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <TextView
+                    android:id="@+id/label8VOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label7MOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="8VOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_8VOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_7MOEGB_LEN"
+                    android:layout_toRightOf="@id/label8VOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_8VOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_7MOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_8VOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_8VOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_7MOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_8VOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_8VOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_7MOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_8VOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <TextView
+                    android:id="@+id/label9NOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label8VOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="9NOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_9NOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_8VOEGB_LEN"
+                    android:layout_toRightOf="@id/label9NOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_9NOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_8VOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_9NOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_9NOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_8VOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_9NOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_9NOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_8VOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_9NOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+                <TextView
+                    android:id="@+id/label10MOEGB"
+                    android:layout_width="80dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/label9NOEGB"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="10MOEGB"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/LA_10MOEGB_LEN"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_9NOEGB_LEN"
+                    android:layout_toRightOf="@id/label10MOEGB"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+                <EditText
+                    android:id="@+id/LA_10MOEGB_MAT"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/LA_9NOEGB_MAT"
+                    android:layout_toRightOf="@id/LA_10MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="3"
+                    android:gravity="top"
+                    android:inputType="number"
+                    android:enabled="true"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_10MOEGB_LEN"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_9NOEGB_LEN"
+                    android:layout_toRightOf="@id/LA_10MOEGB_MAT"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+                <EditText
+                    android:id="@+id/PA_10MOEGB_MAT"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/PA_9NOEGB_MAT"
+                    android:layout_toRightOf="@id/PA_10MOEGB_LEN"
+                    android:background="@drawable/borde_celda"
+                    android:maxLength="4"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="numberDecimal"
+                    android:isScrollContainer="true"
+                    android:maxLines="1"
+                    android:minLines="1" />
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <Button
+                    android:id="@+id/btn_cancelarPedagogico"
+                    android:layout_gravity="right"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="CANCELAR"/>
+
+
+                <Button
+                    android:id="@+id/btn_siguientePedagogico"
+                    android:layout_gravity="right"
+                    android:layout_margin="15dp"
+                    android:layout_toRightOf="@id/btn_cancelarPedagogico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="SIGUIENTE"/>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

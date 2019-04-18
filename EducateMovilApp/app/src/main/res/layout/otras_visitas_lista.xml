@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otras_visitas_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+
+    <TextView
+        android:id="@+id/et_mostrar_fecha_picker"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top"
+        android:hint="@string/formato_fecha"
+        android:inputType="date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/ib_obtener_fecha" />
+
+
+    <ImageButton
+        android:id="@+id/ib_obtener_fecha"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="120dp"
+        android:gravity="top"
+        android:src="@drawable/calendario50"
+        app:layout_constraintLeft_toRightOf="@+id/et_mostrar_fecha_picker" />
+
+    <ProgressBar
+        android:id="@+id/busqueda_otras_visitas_progreso"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_obtener_fecha"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/errorViewOtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_obtener_fecha"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/otrasVisitasList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ib_obtener_fecha"
+        android:drawSelectorOnTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" />
+</RelativeLayout>

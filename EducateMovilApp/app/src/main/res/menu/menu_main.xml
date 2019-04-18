@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.root.educateappcontrolvisitas.ui.MainActivity">
+
+    <item
+        android:id="@+id/username"
+        android:title="hola"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/create_requirement"
+        android:title="Crear requerimiento"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sign_out_menu"
+        android:title="Cerrar sesión"
+        app:showAsAction="never"/>
+</menu>

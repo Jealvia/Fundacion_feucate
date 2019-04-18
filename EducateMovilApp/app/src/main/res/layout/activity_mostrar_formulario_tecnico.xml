@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#FFF7DA"
+    android:padding="5dp"
+    tools:context=".ui.mostrarFormularioTecnicoActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollEscuela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_fecha_hora_checkin"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK IN: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_hora_checkin"
+                    android:layout_width="280dp"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/label_fecha_hora_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_lat_checkin"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/fecha_hora_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK IN LAT: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lat_checkin"
+                    android:layout_width="210dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/fecha_hora_checkin"
+                    android:layout_toRightOf="@id/label_lat_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_lon_checkin"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/label_lat_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK IN LONG: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lon_checkin"
+                    android:layout_width="210dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/lat_checkin"
+                    android:layout_toRightOf="@id/label_lon_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/label_fecha_hora_checkout"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/label_lon_checkin"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK OUT: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fecha_hora_checkout"
+                    android:layout_width="280dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/lon_checkin"
+                    android:layout_toRightOf="@id/label_fecha_hora_checkout"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_lat_checkout"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/label_fecha_hora_checkout"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK OUT LAT: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lat_checkout"
+                    android:layout_width="210dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/fecha_hora_checkout"
+                    android:layout_toRightOf="@id/label_lat_checkout"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/label_lon_checkout"
+                    android:layout_width="150dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/label_lat_checkout"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="CHECK OUT LONG: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lon_checkout"
+                    android:layout_width="210dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/lat_checkout"
+                    android:layout_toRightOf="@id/label_lon_checkout"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/visita_numero"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/lon_checkout"
+                    android:layout_toRightOf="@id/escuela_MIE"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/escuela_MIE"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/label_lon_checkout"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/escuela_MIE"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/nombre"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text=" "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/label_escuela_jornada"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/direccion"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="JORNADA: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/escuela_jornada"
+                    android:layout_width="180dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/direccion"
+                    android:layout_toRightOf="@id/label_escuela_jornada"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/labelParroquia"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/label_escuela_jornada"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="PARROQUIA: "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/parroquia"
+                    android:layout_width="280dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/escuela_jornada"
+                    android:layout_toRightOf="@id/labelParroquia"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/labelMotivo"
+                    android:layout_width="70dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/labelParroquia"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="MOTIVO:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/motivo"
+                    android:layout_width="310dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/parroquia"
+                    android:layout_toRightOf="@id/labelMotivo"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="MANTENIMIENTO APCI "
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/labelEmbajadorIN"
+                    android:layout_width="100dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/labelMotivo"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="EMBAJADOR IN:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/embajadorIN"
+                    android:layout_width="280dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/motivo"
+                    android:layout_toRightOf="@id/labelEmbajadorIN"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="3dp"
+                    android:text="ROGER GRANDA"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+            <ProgressBar
+                android:id="@+id/cargar_formulario_tec"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="FORMULARIO TECNICO"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACTIVIDADES REALIZADAS:"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/form_tec_actividades_realizadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ACTIVIDAD REALIZADA:"
+                        android:textColor="@android:color/black" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="ACCION TOMADA:"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/form_tec_accion_tomada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ACCION TOMADA:"
+                            android:textColor="@android:color/black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="OBSERVACIONES:"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/form_tec_observaciones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OBSERVACIONES"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
